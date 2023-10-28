@@ -1,0 +1,91 @@
+form {
+    padding: 35px 20px;
+}
+
+.fieldset {
+    padding-bottom: 15px;
+    overflow: auto;
+}
+
+label, input, textarea {
+    font-size: 14px
+}
+
+/* .fieldset label {
+    display: inline-block;
+    width: 110px;
+    max-width: 100%;
+    text-align: right;
+    text-transform: capitalize;
+    margin-right:15px;
+    color: var(--tertiary);
+    float:left;
+} */
+
+.fieldset input, textarea {
+    border: 0;
+    padding: 10px 15px;
+    background: #efefef;
+    border-radius:2px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.descriptionLabel {
+    float: left;
+}
+
+textarea {
+    display: block; 
+    height: 100px; 
+    line-height: 20px;
+}
+
+
+.fieldsetContainer {
+    max-width: 100%;
+    display: inline-block;
+    float: left;
+}
+.errorMsg {
+    display: none;
+}
+
+.error .errorMsg{
+    display: block;
+}
+
+.errorMsg p{
+    color: #ec6565;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.submitWrapper {
+    width: 215px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.profileInfo .fieldset input, .profileInfo textarea{
+    background: var(--background);
+}
+
+.profileInfo label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+ .fieldset input.cta-primary {
+    background: #227DE7;
+    border: 0;
+    border:1px solid #FFF;
+    color:#FFFFFF;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+

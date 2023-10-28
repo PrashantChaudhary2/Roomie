@@ -1,0 +1,434 @@
+:root {
+
+    --primary: #227DE7;
+    --secondary: #333333;
+    --tertiary: #e2e9f1;
+    --background: #FFFFFF;
+    --content: #7d7b77;
+
+    --headlineOne: 'Oswald', sans-serif;
+    --body: 'Quattrocento', serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+  }
+
+h1, h2 {
+    font-family: var(--headlineOne);
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-family: var(--headlineOne);
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: 400;
+}
+
+p{
+    font-family: var(--body);
+    
+    padding-top:7px;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+i {
+    color:  var(--secondary);
+}
+
+.sectionHeading {
+    font-size: 30px;
+}
+
+.sectionSubheading {
+    padding-top: 7px;
+    font-size: 20px;
+}
+
+
+.content p {
+    color: var(--content);
+    padding: 11px 0;
+}
+
+.cta-primary {
+    text-transform: uppercase;
+    color: var(--background);
+    background: var(--primary);
+    font-family: var(--headlineOne);
+    padding: 10px 25px;
+    display: inline-block;
+    transition: .3s linear .1s;
+    margin-right: 15px;
+    border-radius:20px;
+    border: 1px solid transparent;
+}
+
+.cta-secondary{
+    text-transform: uppercase;
+    color:var(--primary);
+    border: 1px solid var(--primary);
+    font-family: var(--headlineOne);
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius:20px;
+}
+
+.cta-primary:hover {
+    color: var(--primary);
+    background: var(--background);
+    border:1px solid var(--primary);
+}
+
+.cta-secondary:hover{
+    color: var(--background);
+    background: var(--primary);
+}
+
+
+.spacer {
+    margin-bottom: 35px;
+}
+
+.siteContainer {
+    width:1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#login, #signup{
+   
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+.loginContainer,.signupContainer {
+    height: 100vh;
+}
+
+#login .sectionOne, #login .sectionTwo, #signup .sectionOne, #signup .sectionTwo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+#login .cta-primary,  #login .cta-secondary, #signup .cta-primary,  #signup .cta-secondary{
+    padding: 12px 45px;
+}
+
+/* #login a.cta-secondary{
+    display: inline-block;
+} */
+
+#login .sectionTwo, #signup .sectionOne {
+    background: var(--primary);
+}
+
+#login .sectionTwo, #login .sectionTwo h2, #singup .sectionOne, #signup .sectionOne h2{
+    color: var(--background);
+}
+
+#login p, #signup p{
+    margin-bottom:15px;
+}
+
+#signup p{
+    color:#FFF;
+}
+#login .cta-primary, #signup .cta-primary, #login a.cta-secondary, #signup a.cta-secondary {
+    width: 200px;
+    max-width: 100%;
+}
+
+#login .logo, #signup .logo{
+    width: 120px;
+    max-width: 100%;
+    margin-left: 40px;
+}
+
+#login .cta-secondary, #signup .cta-secondary {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+
+.profileCard .photos img{
+    width:200px;
+    max-width: 100%;
+}
+
+#navFlyout .navigation {
+    background: var(--background);
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    width: 200px;
+    max-width: 100%;;
+    height: 100%;
+    z-index: 97;
+    display: block;
+    left: 0%;
+
+}
+
+#navFlyout .navigation .logo img{
+    width: 150px;
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+#navFlyout .navigation a{
+    color: var(--body);
+}
+
+#navFlyout .navigation a:hover{
+    color: var(--primary);
+}
+
+.contentWrapper {
+    margin-left:200px;
+    background: var(--tertiary);
+    padding: 40px;
+    height:100%;
+}
+
+.profileCard{
+    display: inline-block;
+    background: var(--background);
+    padding:20px 15px;
+    margin-left:20px;
+    text-align: center;
+}
+
+.profileCard h3{
+    padding: 15px 0;
+}
+
+.profileCard p {
+    padding-bottom: 15px;
+    font-size: 13px;
+}
+#listings .filter{
+    margin-bottom:25px;
+}
+
+#listings .profileCard:first-child{
+    margin:0;
+}
+
+.filter input[type="submit"] {
+    background: var(--background);
+    border: 1px solid var(--primary);
+    border-radius: 2px;
+    padding: 5px 10px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.filter select{
+    padding: 5px 10px;
+}
+/* #navigation ul li {
+    float: left;
+    position: relative;
+} */
+.navigation ul li ul {
+    position: relative;
+    left: 0px;
+    display: none;
+}
+
+.navigation ul li ul li {
+    float: none;
+}
+
+.navigation ul li:hover ul {
+    display: block;
+}
+
+.navigation li a:hover{
+    color: var(--primary);
+}
+
+.profileInfoText strong{
+    display: block;
+
+}
+
+.profileInfoText {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.navigation li a{
+    margin-bottom: 15px;
+    display: block;
+}
+
+.wrapper{
+    height: 100%;
+}
+
+.profileWrapper {
+    background: var(--background);
+    text-align: center;
+    padding: 40px 0;
+}
+.profileWrapper .profilePic img{
+    width:300px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.profileWrapper .gallery img{
+    width:200px;
+    max-width: 100%;
+}
+
+.profileWrapper .sectionConnect p{
+    display: inline-block;
+    
+}
+
+.profileWrapper .profileWrapperInner {
+    width:800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.profileWrapper .profileWrapperInner .sectionConnect{
+    overflow: auto;
+}
+
+
+.profileWrapper .profileWrapperInner .sectionConnect p{
+    display: inline-block;
+    line-height: 2;
+    
+}
+
+.profileWrapper .profileWrapperInner .sectionConnect p, .profileWrapper .profileWrapperInner .sectionConnect p i, .profileWrapper .profileWrapperInner .sectionBio p{
+    color: var(--content);
+}
+
+.profileWrapper .profileWrapperInner .sectionConnect .connect{
+    display: inline-block;
+    float: right;
+    
+}
+
+.profileWrapper .profileWrapperInner .sectionConnect .connect i{
+    color: var(--primary);
+}
+
+.profileWrapper .profileWrapperInner .sectionConnect .connect a:hover i{
+    color: #FFFFFF;
+}
+
+
+.profileWrapper .profileWrapperInner .sectionConnect, .profileWrapper .profileWrapperInner .sectionBio, .profileWrapper .profileWrapperInner .sectionGallery{
+    padding: 25px 0;
+    text-align: left;
+}
+
+.profileWrapper .profileWrapperInner .sectionBio p{
+    padding:0;
+}
+
+.profileWrapper .profileWrapperInner .sectionBio h3, .profileWrapper .profileWrapperInner .sectionGallery h3{
+    padding-bottom:15px;
+}
+
+.container {
+    text-align: left;
+}
+
+.container img {
+    width:250px;
+    max-width: 100%;
+}
+
+.profileWrapper .profileWrapperInner .sectionConnect .connect a .fa-plus {
+    color: #FFFFFF;
+}
+
+.profileWrapper .profileWrapperInner .sectionConnect .connect a:hover .fa-plus{
+    color: var(--primary);
+}
+
+#messageWrap .profileWrapper {
+    position: relative;
+    height: 100%;
+}
+
+.messageCreation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+    background: #efefef;
+    padding: 10px;
+}
+
+#messageWrap .message {
+    width: 50%;
+    float: right;
+    padding: 20px;
+    background: var(--primary);
+    color: #FFFFFF;
+    border-radius: 20px 20px 0px 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+#messageWrap .message.received {
+    border-radius: 20px 20px 20px 0px;
+    float: left;
+    background: var(--content);
+}
+
+#theMessage {
+    width: 100%;
+}
+
+#addPhoto input{
+    display: block;
+    margin-bottom: 15px;
+}
+
+#addPhoto input[name="description"] {
+    border: 0;
+    background: #efefef;
+    padding: 12px 18px;
+    
+}
+
+#addPhoto h3{
+    margin-bottom: 15px;
+}
